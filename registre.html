@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Exercici, formulari i registre</h1>
-    <form action=""></form>
+    <form action="registre.html" method="piost">
+        <div>
+            <label for="nom">Nom</label>
+            <input id="nom" type="text" required>
+            <label for="llinatge">Llinatge</label>
+            <input id="llinatge" type="text" required>
+        </div>
+        <div>
+            <label for="sexo-opcion-1">Home</label>
+            <input type="radio" id="sexo-opcion-1" value="Home">
+            <label for="sexo-opcion-2">Dona</label>
+            <input type="radio" id="sexo-opcion-2" value="Dona">
+            <label for="sexo-opcion-3">Altre</label>
+            <input type="radio" id="sexo-opcion-3" value="Altre">
+        </div>
+        <div>
+            <label for="mail">Mail</label>
+            <input type="mail" id="mail" pattern="@" placeholder="El teu mail" required>
+            <label for="contraseña">Contrasenya</label>
+            <input type="password" id="contraseña" required>
+        </div>
+        <div>
+            <label for="fecha-de-nacimiento">Data de naixement</label>
+            <input type="date" id="fecha-de-nacimiento">
+        </div>
+        <div>
+            <label for="terms">Estic d'acord amb els termes  i condicions</label>
+            <input type="checkbox">
+        </div>
+        <div>
+            <input type="submit" name="Submit" id="">
+        </div>
+    </form>
 </body>
+
 </html>
